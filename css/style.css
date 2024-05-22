@@ -41,14 +41,14 @@ table {
 }
 
 th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #60a8fa;
     padding: 8px;
     text-align: left;
 }
 
 th {
     background-color: #ff0601;
-    color: white;
+    color: rgb(71, 90, 255);
 }
 
 /* Footer styles */
@@ -61,7 +61,7 @@ footer {
 
 /* Link styles */
 a {
-    color: #4CAF50;
+    color: #f2f74c;
     text-decoration: none;
 }
 
@@ -71,7 +71,7 @@ a:hover {
 
 /* Image styles */
 img {
-    width: 60%;
+    width: 40%;
     height: auto;
     margin-bottom: 10px;
 }
