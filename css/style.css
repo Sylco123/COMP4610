@@ -10,16 +10,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #a8fcff;
     color: #333;
 }
 
 /* Header styles */
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #ff0601;
+    color: #a8fcff;
     text-align: center;
     padding: 20px 0;
+    font-style: italic;
 }
 
 /* Main content styles */
@@ -46,7 +47,7 @@ th, td {
 }
 
 th {
-    background-color: #4CAF50;
+    background-color: #ff0601;
     color: white;
 }
 
@@ -70,7 +71,7 @@ a:hover {
 
 /* Image styles */
 img {
-    width: 100%;
+    width: 60%;
     height: auto;
     margin-bottom: 10px;
 }
