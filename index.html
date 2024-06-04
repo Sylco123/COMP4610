@@ -1,109 +1,24 @@
-<!--
-File: index.html
-GUI Assignment: Creating Your First Web Page
-[Sergio Barro-Ojeda], [UMass Boston and CS Department], [sergio_barroojeda@student.uml.edu]
-What to submit: Nothing to submit as long as your editor is ready to use.
-PART 2: First Web Page
-Copyright (c) 2024 by [Sergio Barro-Ojeda]. All rights reserved. May be freely copied or
-excerpted for educational purposes with credit to the author.
-updated by [Sergio Barro-Ojeda] on [5/21/2024] at [5 pm]
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Page</title>
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Multiplication Table</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header section -->
-    <header>
-        <h1>Sylcustoms Webpage</h1>
-    </header>
-
-    <!-- Main content section -->
-    <main>
-        <!-- Informative content -->
-        <section>
-            <h2>About This Page</h2>
-            <p>This page is to promote my action figure photography hobby, starting up a portfolio potentially</p>
-        </section>
-
-        <!-- Links section -->
-        <section>
-            <h2>Social Medias</h2>
-            <ul>
-                <li><a href="https://x.com/Sylco234" target="_blank">Twitter/X</a></li>
-                <li><a href="https://www.instagram.com/sylcustoms/" target="_blank">Instagram</a></li>
-                <li><a href="https://www.tiktok.com/@sylcustoms?is_from_webapp=1&sender_device=pc" target="_blank">Tiktok</a></li>
-            </ul>
-        </section>
-
-        <!-- Images section -->
-        <section>
-            <h2>Images</h2>
-            <img src="images/Movie_Bosses.jpg" alt="Movie Bosses">
-            <img src="images/Luffy_Zoro_1.jpg" alt="Example Image 2">
-            <img src="images/Godzilla_1.jpg" alt="Example Image 3">
-        </section>
-
-        <!-- Table section -->
-        <section>
-            <h2>Action Fig Table</h2>
-            <table>
-                <tr>
-                    <th>Figure</th>
-                    <th>Company</th>
-                    <th>Photo</th>
-                </tr>
-                <tr>
-                    <td>Turles</td>
-                    <td>SH Figuarts</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>Broly</td>
-                    <td>SH Figuarts</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>Cooler</td>
-                    <td>SH Figuarts</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>Luffy</td>
-                    <td>VAH</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>Zoro</td>
-                    <td>VAH</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>Godzilla</td>
-                    <td>SH Monsterarts</td>
-                    <td>3</td>
-                </tr>
-            </table>
-        </section>
-    </main>
-
-    <!-- Footer section -->
-    <footer>
-        <p>Created by Sergio Barro-Ojeda - &copy; 2024</p>
-        <!-- W3C Validation Icons -->
-        <p>
-            <a href="http://validator.w3.org/check?uri=referer">
-                <img src="http://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="Valid HTML5">
-            </a>
-            <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                <img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-            </a>
-        </p>
-    </footer>
+  <form id="multiplicationForm">
+    <label for="hStart">Min Column Value:</label>
+    <input type="number" id="hStart" name="hStart">
+    <label for="hEnd">Max Column Value:</label>
+    <input type="number" id="hEnd" name="hEnd">
+    <label for="vStart">Min Row Value:</label>
+    <input type="number" id="vStart" name="vStart">
+    <label for="vEnd">Max Row Value:</label>
+    <input type="number" id="vEnd" name="vEnd">
+    <button type="submit">Generate Table</button>
+  </form>
+  <div id="tableContainer"></div>
+  <script src="app.js"></script>
 </body>
 </html>
