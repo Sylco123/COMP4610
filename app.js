@@ -7,6 +7,7 @@ document.getElementById('multiplicationForm').addEventListener('submit', functio
 
   console.log('hStart:', hStart, 'hEnd:', hEnd, 'vStart:', vStart, 'vEnd:', vEnd); // Debugging log
   if (validateInputs(hStart, hEnd, vStart, vEnd)) {
+    alert('Hello');
     generateTable(hStart, hEnd, vStart, vEnd);
   }
 });
