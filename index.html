@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Sergio Barro-Ojeda 01857597-->
+  <!-- Sergio Barro-Ojeda 01857597-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiplication Table Generator</title>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .error {
-            color: red;
-            font-size: 0.875em;
-        }
-        #errorMessages {
-            margin-top: 10px;
-            color: red;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Multiplication Table</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- adding in the apis:-->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+  <script src="app.js" defer></script>
 </head>
 <body>
-    <h1>Multiplication Table Generator</h1>
-    <form id="multiplicationForm">
-        <label for="hStart">Horizontal Start:</label>
-        <input type="text" id="hStart" name="hStart"><br>
-        <label for="hEnd">Horizontal End:</label>
-        <input type="text" id="hEnd" name="hEnd"><br>
-        <label for="vStart">Vertical Start:</label>
-        <input type="text" id="vStart" name="vStart"><br>
-        <label for="vEnd">Vertical End:</label>
-        <input type="text" id="vEnd" name="vEnd"><br>
-        <button type="submit">Generate Table</button>
-        <div id="errorMessages"></div>
-    </form>
-    <div id="tableContainer"></div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
-    <script src="app.js"></script>
+  <form id="multiplicationForm">
+    <label for="hStart">Min Column Value:</label>
+    <input type="number" id="hStart" name="hStart">
+    <div id="hStartSlider"></div>
+    <label for="hEnd">Max Column Value:</label>
+    <input type="number" id="hEnd" name="hEnd">
+    <div id="hEndSlider"></div>
+    <label for="vStart">Min Row Value:</label>
+    <input type="number" id="vStart" name="vStart">
+    <div id="vStartSlider"></div>
+    <label for="vEnd">Max Row Value:</label>
+    <input type="number" id="vEnd" name="vEnd">
+    <div id="vEndSlider"></div>
+    <button type="submit">Generate Table</button>
+    
+  </form>
+  <h2 id="errorMessages" style="color: red;"></h2>
+  <div id="tabs">
+    <ul>
+      <li><a href="#tabs-1">Input</a></li>
+    </ul>
+    <div id="tabs-1">
+      <div id="tableContainer"></div>
+    </div>
+  </div>
 </body>
 </html>
