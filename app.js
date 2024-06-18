@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  // Form validation
+  // Sergio Barro-Ojeda 01857597
+    // Form validation
   $("#multiplicationForm").validate({
       rules: {
           hStart: {
