@@ -53,11 +53,11 @@ $(document).ready(function() {
           return;
       }
       if (hStart > hEnd) {
-          errorMessages.append("<p>Horizontal Start must be less than or equal to Horizontal End.</p>");
+          errorMessages.append("<p>Min Column Value must be less than or equal to Max Column Value.</p>");
           return;
       }
       if (vStart > vEnd) {
-          errorMessages.append("<p>Vertical Start must be less than or equal to Vertical End.</p>");
+          errorMessages.append("<p>Min Row Value must be less than or equal to Max Row Value.</p>");
           return;
       }
       if (hStart < -50 || hEnd > 50 || vStart < -50 || vEnd > 50) {
