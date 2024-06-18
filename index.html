@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dynamic Multiplication Table</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table Generator</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .error {
+            color: red;
+            font-size: 0.875em;
+        }
+        #errorMessages {
+            margin-top: 10px;
+            color: red;
+        }
+    </style>
 </head>
 <body>
-  <form id="multiplicationForm">
-    <label for="hStart">Min Column Value:</label>
-    <input type="number" id="hStart" name="hStart">
-    <label for="hEnd">Max Column Value:</label>
-    <input type="number" id="hEnd" name="hEnd">
-    <label for="vStart">Min Row Value:</label>
-    <input type="number" id="vStart" name="vStart">
-    <label for="vEnd">Max Row Value:</label>
-    <input type="number" id="vEnd" name="vEnd">
-    <button type="submit">Generate Table</button>
-  </form>
-  <div id="tableContainer"></div>
-  <script src="app.js"></script>
+    <h1>Multiplication Table Generator</h1>
+    <form id="multiplicationForm">
+        <label for="hStart">Horizontal Start:</label>
+        <input type="text" id="hStart" name="hStart"><br>
+        <label for="hEnd">Horizontal End:</label>
+        <input type="text" id="hEnd" name="hEnd"><br>
+        <label for="vStart">Vertical Start:</label>
+        <input type="text" id="vStart" name="vStart"><br>
+        <label for="vEnd">Vertical End:</label>
+        <input type="text" id="vEnd" name="vEnd"><br>
+        <button type="submit">Generate Table</button>
+        <div id="errorMessages"></div>
+    </form>
+    <div id="tableContainer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
