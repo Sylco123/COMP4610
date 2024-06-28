@@ -1,10 +1,110 @@
+/* Sergio Barro-Ojeda 01857597 */
 .tile {
-    width: 65px; /* Adjust width as per your design */
-    height: 65px; /* Adjust height as per your design */
+    width: 45px; /* Adjust width as per your design */
+    height: 45px; /* Adjust height as per your design */
+}
+
+#scrabble-board {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto; /* Center the board */
+}
+
+.board-image {
+    width: 100%;
+    height: auto;
 }
 
 .board-space {
-    width: 40px; /* Same as tile width */
-    height: 40px; /* Same as tile height */
-    border: 1px solid #ccc; /* Example border */
+    position: absolute;
+    width: 6%; /* Adjust based on your board layout */
+    height: 80%; /* Adjust based on your board layout */
+    border: 1px solid transparent;
+    /*border: 2px dashed #f53030;*/
+}
+
+#board-space-1 {
+    left: 0%;
+    top: 3%;
+}
+
+#board-space-2 {
+    left: 6.75%;
+    top: 3%;
+}
+
+#board-space-3 {
+    left: 13.5%;
+    top: 3%;
+}
+
+#board-space-4 {
+    left: 20.25%;
+    top: 3%;
+}
+
+#board-space-5 {
+    left: 27%;
+    top: 3%;
+}
+
+#board-space-6 {
+    left: 33.5%;
+    top: 3%;
+}
+
+#board-space-7 {
+    left: 40%;
+    top: 3%;
+}
+#board-space-8 {
+    left: 46.5%;
+    top: 3%;
+}
+
+#board-space-9 {
+    left: 53%;
+    top: 3%;
+}
+#board-space-10 {
+    left: 59.75%;
+    top: 3%;
+}
+#board-space-11 {
+    left: 66.5%;
+    top: 3%;
+}
+#board-space-12 {
+    left: 73%;
+    top: 3%;
+}
+#board-space-13 {
+    left: 80%;
+    top: 3%;
+}
+#board-space-14 {
+    left: 86.5%;
+    top: 3%;
+}
+#board-space-15 {
+    left: 93.25%;
+    top: 3%;
+}
+
+
+/* Add more board space positions as needed */
+
+/* Discard area styles */
+#tile-rack {
+    position: relative;
+}
+
+#discard-area {
+    width: 100px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    border: 2px dashed #ccc;
+    position: absolute; /* Position within tile rack */
+    left: 10px; /* Adjust position */
+    bottom: 10px; /* Adjust position */
 }

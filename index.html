@@ -1,3 +1,4 @@
+<!-- Sergio Barro-Ojeda 01857597-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,16 +13,30 @@
 </head>
 <body>
     <div id="scrabble-board" style="position: relative;">
-        <img src="images/Scrabble_Board_OneLine.png" alt="Scrabble Board Line" style="width: 100%; height: auto;">
-        <div class="board-space" id="board-space-1" style="position: absolute; left: 25px; top: 25px;"></div>
-        <div class="board-space" id="board-space-2" style="position: absolute; left: 100px; top: 25px;"></div>
-        <div class="board-space double-word" id="board-space-3" style="position: absolute; left: 200px; top: 25px;"></div>
-        <!-- Adjust position and size as per your board image and layout -->
+        <img src="images/Scrabble_Board_OneLine.png" alt="Scrabble Board Line" class="board-image">
+        <div class="board-space" id="board-space-1"></div>
+        <div class="board-space" id="board-space-2"></div>
+        <div class="board-space double-word" id="board-space-3"></div>
+        <div class="board-space" id="board-space-4"></div>
+        <div class="board-space" id="board-space-5"></div>
+        <div class="board-space" id="board-space-6"></div>
+        <div class="board-space double-letter" id="board-space-7"></div>
+        <div class="board-space" id="board-space-8"></div>
+        <div class="board-space double-letter" id="board-space-9"></div>
+        <div class="board-space" id="board-space-10"></div>
+        <div class="board-space" id="board-space-11"></div>
+        <div class="board-space" id="board-space-12"></div>
+        <div class="board-space double-word" id="board-space-13"></div>
+        <div class="board-space" id="board-space-14"></div>
+        <div class="board-space" id="board-space-15"></div>
+        
     </div>
-    <div id="tile-rack">
-    <img src="images/scrabble-tile-holder-406774_640.png" alt="Tile Rack">
-    <!-- Example tile placeholder -->
-    <img src="" class="tile" alt="Tile" data-letter="" data-value="">
+    <div id="tile-rack" style="position: relative;">
+        <img src="images/scrabble-tile-holder-406774_640.png" alt="Tile Rack">
+        <div id="discard-area" class="discard-area" style="position: absolute; left: 10px; bottom: 10px;"></div>
+        <!-- Example tile placeholder -->
+        <img src="" class="tile" alt="Tile" data-letter="" data-value="">
+    </div>
 </div>
 <button id="deal-button">Deal New Tiles</button>
 <div id="score-display">Score: 0</div>
