@@ -1,77 +1,10 @@
-/*
-File: style.css
-Description: CSS file for styling my first web page, making a social media page
-Author: Sergio Barro-Ojeda
-Date: 5/21/2024
-*/
-
-/* General styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #a8fcff;
-    color: #333;
+.tile {
+    width: 65px; /* Adjust width as per your design */
+    height: 65px; /* Adjust height as per your design */
 }
 
-/* Header styles */
-header {
-    background-color: #ff0601;
-    color: #a8fcff;
-    text-align: center;
-    padding: 20px 0;
-    font-style: italic;
-}
-
-/* Main content styles */
-main {
-    padding: 20px;
-}
-
-/* Section styles */
-section {
-    margin-bottom: 20px;
-}
-
-/* Table styles */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-th, td {
-    border: 1px solid #60a8fa;
-    padding: 8px;
-    text-align: left;
-}
-
-th {
-    background-color: #ff0601;
-    color: rgb(71, 90, 255);
-}
-
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Link styles */
-a {
-    color: #f2f74c;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Image styles */
-img {
-    width: 40%;
-    height: auto;
-    margin-bottom: 10px;
+.board-space {
+    width: 40px; /* Same as tile width */
+    height: 40px; /* Same as tile height */
+    border: 1px solid #ccc; /* Example border */
 }

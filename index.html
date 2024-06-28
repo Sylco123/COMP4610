@@ -1,44 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Sergio Barro-Ojeda 01857597-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiplication Table Generator</title>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .error {
-            color: red;
-            font-size: 0.875em;
-        }
-        #errorMessages {
-            margin-top: 10px;
-            color: red;
-        }
-    </style>
+    <title>Scrabble Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/Scrabble_Pieces_AssociativeArray_Jesse.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
-    <h1>Multiplication Table Generator</h1>
-    <form id="multiplicationForm">
-        <label for="hStart">Horizontal Start:</label>
-        <input type="text" id="hStart" name="hStart"><br>
-        <label for="hEnd">Horizontal End:</label>
-        <input type="text" id="hEnd" name="hEnd"><br>
-        <label for="vStart">Vertical Start:</label>
-        <input type="text" id="vStart" name="vStart"><br>
-        <label for="vEnd">Vertical End:</label>
-        <input type="text" id="vEnd" name="vEnd"><br>
-        <button type="submit">Generate Table</button>
-        <div id="errorMessages"></div>
-    </form>
-    <div id="tableContainer"></div>
+    <div id="scrabble-board" style="position: relative;">
+        <img src="images/Scrabble_Board_OneLine.png" alt="Scrabble Board Line" style="width: 100%; height: auto;">
+        <div class="board-space" id="board-space-1" style="position: absolute; left: 25px; top: 25px;"></div>
+        <div class="board-space" id="board-space-2" style="position: absolute; left: 100px; top: 25px;"></div>
+        <div class="board-space double-word" id="board-space-3" style="position: absolute; left: 200px; top: 25px;"></div>
+        <!-- Adjust position and size as per your board image and layout -->
+    </div>
+    <div id="tile-rack">
+    <img src="images/scrabble-tile-holder-406774_640.png" alt="Tile Rack">
+    <!-- Example tile placeholder -->
+    <img src="" class="tile" alt="Tile" data-letter="" data-value="">
+</div>
+<button id="deal-button">Deal New Tiles</button>
+<div id="score-display">Score: 0</div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
-    <script src="app.js"></script>
+
 </body>
 </html>
