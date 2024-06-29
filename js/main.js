@@ -126,9 +126,7 @@ function calculateScore() {
     $(".board-space").each(function() {
         const tile = $(this).find(".tile");
         if (tile.length > 0) {
-            // Assuming each tile has a data-value attribute for its score value
             const tileValue = parseInt(tile.attr("data-value"));
-            // Add tile value to total score
             totalScore += tileValue;
         }
         // Check for bonus squares (implement logic based on your bonus rules)
@@ -148,14 +146,11 @@ function isValidWord() {
     $(".board-space").each(function() {
         const tile = $(this).find(".tile");
         if (tile.length > 0) {
-            // Assuming each tile has a data-letter attribute for its letter
             const letter = tile.attr("data-letter");
             word += letter;
         }
     });
-
-    // Example: Check if 'word' exists in a dictionary (server-side check or local dictionary)
-    const dictionary = ["apple", "banana", "orange"]; // Example dictionary
+    const dictionary = ["apple", "banana", "orange"]; 
     return dictionary.includes(word.toLowerCase());
 }
 
